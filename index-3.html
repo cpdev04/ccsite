@@ -1,0 +1,1506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Healdi - Medical & Health Template">
+
+    <!-- ========== Page Title ========== -->
+    <title>Healdi - Medical & Health Template</title>
+
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/themify-icons.css" rel="stylesheet" />
+    <link href="assets/css/flaticon-set.css" rel="stylesheet" />
+    <link href="assets/css/magnific-popup.css" rel="stylesheet" />
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.css" rel="stylesheet" />
+    <link href="assets/css/bootsnav.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/0b170b98a9.js" crossorigin="anonymous"></script>
+    <!-- ========== End Stylesheet ========== -->
+
+
+
+    <!-- ========== Google Fonts ========== -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        @import url(//cdn.rawgit.com/rtaibah/dubai-font-cdn/master/dubai-font.css);
+
+
+
+
+
+
+        .testim {
+            width: 100%;
+            position: relative;
+            top: 180px;
+            -webkit-transform: translatey(-50%);
+            -moz-transform: translatey(-50%);
+            -ms-transform: translatey(-50%);
+            -o-transform: translatey(-50%);
+            transform: translatey(-50%);
+            font-size: 16px;
+            font-family: Dubai-Light;
+            /* background: rgba(30, 30, 30); */
+            /* margin: 50px 0px; */
+        }
+
+        .testim .wrap {
+            position: relative;
+            width: 100%;
+            max-width: 1020px;
+            /* padding: 40px 20px; */
+            margin: auto;
+            top: -74px;
+        }
+
+        .testim .arrow {
+            display: block;
+            position: absolute;
+            color: #eee;
+            cursor: pointer;
+            font-size: 2em;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            -webkit-transition: all .3s ease-in-out;
+            -ms-transition: all .3s ease-in-out;
+            -moz-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+            padding: 5px;
+            z-index: 22222222;
+        }
+
+        .testim .arrow:before {
+            cursor: pointer;
+        }
+
+        .testim .arrow:hover {
+            color: #ea830e;
+        }
+
+
+        .testim .arrow.left {
+            left: 10px;
+        }
+
+        .testim .arrow.right {
+            right: 10px;
+        }
+
+        .testim .dots {
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            bottom: 13px;
+            left: 0;
+            display: block;
+            z-index: 3333;
+            height: 12px;
+        }
+
+        .testim .dots .dot {
+            list-style-type: none;
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 1px solid #eee;
+            margin: 0 10px;
+            cursor: pointer;
+            -webkit-transition: all .5s ease-in-out;
+            -ms-transition: all .5s ease-in-out;
+            -moz-transition: all .5s ease-in-out;
+            -o-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+            position: relative;
+        }
+
+        .testim .dots .dot.active,
+        .testim .dots .dot:hover {
+            background: #ea830e;
+            border-color: #ea830e;
+        }
+
+        .testim .dots .dot.active {
+            -webkit-animation: testim-scale .5s ease-in-out forwards;
+            -moz-animation: testim-scale .5s ease-in-out forwards;
+            -ms-animation: testim-scale .5s ease-in-out forwards;
+            -o-animation: testim-scale .5s ease-in-out forwards;
+            animation: testim-scale .5s ease-in-out forwards;
+        }
+
+        .testim .cont {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testim .cont>div {
+            text-align: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 0 0 70px 0;
+            opacity: 0;
+        }
+
+        .testim .cont>div.inactive {
+            opacity: 1;
+        }
+
+
+        .testim .cont>div.active {
+            position: relative;
+            opacity: 1;
+        }
+
+
+        .testim .cont div .img img {
+            display: block;
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            border-radius: 50%;
+        }
+
+        .testim .cont div h2 {
+            color: #ea830e;
+            font-size: 1em;
+            margin: 15px 0;
+        }
+
+        .testim .cont div p {
+            font-size: 1.15em;
+            color: #eee;
+            width: 80%;
+            margin: auto;
+        }
+
+        .testim .cont div.active .img img {
+            -webkit-animation: testim-show .5s ease-in-out forwards;
+            -moz-animation: testim-show .5s ease-in-out forwards;
+            -ms-animation: testim-show .5s ease-in-out forwards;
+            -o-animation: testim-show .5s ease-in-out forwards;
+            animation: testim-show .5s ease-in-out forwards;
+        }
+
+        .testim .cont div.active h2 {
+            -webkit-animation: testim-content-in .4s ease-in-out forwards;
+            -moz-animation: testim-content-in .4s ease-in-out forwards;
+            -ms-animation: testim-content-in .4s ease-in-out forwards;
+            -o-animation: testim-content-in .4s ease-in-out forwards;
+            animation: testim-content-in .4s ease-in-out forwards;
+        }
+
+        .testim .cont div.active p {
+            -webkit-animation: testim-content-in .5s ease-in-out forwards;
+            -moz-animation: testim-content-in .5s ease-in-out forwards;
+            -ms-animation: testim-content-in .5s ease-in-out forwards;
+            -o-animation: testim-content-in .5s ease-in-out forwards;
+            animation: testim-content-in .5s ease-in-out forwards;
+        }
+
+        .testim .cont div.inactive .img img {
+            -webkit-animation: testim-hide .5s ease-in-out forwards;
+            -moz-animation: testim-hide .5s ease-in-out forwards;
+            -ms-animation: testim-hide .5s ease-in-out forwards;
+            -o-animation: testim-hide .5s ease-in-out forwards;
+            animation: testim-hide .5s ease-in-out forwards;
+        }
+
+        .testim .cont div.inactive h2 {
+            -webkit-animation: testim-content-out .4s ease-in-out forwards;
+            -moz-animation: testim-content-out .4s ease-in-out forwards;
+            -ms-animation: testim-content-out .4s ease-in-out forwards;
+            -o-animation: testim-content-out .4s ease-in-out forwards;
+            animation: testim-content-out .4s ease-in-out forwards;
+        }
+
+        .testim .cont div.inactive p {
+            -webkit-animation: testim-content-out .5s ease-in-out forwards;
+            -moz-animation: testim-content-out .5s ease-in-out forwards;
+            -ms-animation: testim-content-out .5s ease-in-out forwards;
+            -o-animation: testim-content-out .5s ease-in-out forwards;
+            animation: testim-content-out .5s ease-in-out forwards;
+        }
+
+        @-webkit-keyframes testim-scale {
+            0% {
+                -webkit-box-shadow: 0px 0px 0px 0px #eee;
+                box-shadow: 0px 0px 0px 0px #eee;
+            }
+
+            35% {
+                -webkit-box-shadow: 0px 0px 10px 5px #eee;
+                box-shadow: 0px 0px 10px 5px #eee;
+            }
+
+            70% {
+                -webkit-box-shadow: 0px 0px 10px 5px #ea830e;
+                box-shadow: 0px 0px 10px 5px #ea830e;
+            }
+
+            100% {
+                -webkit-box-shadow: 0px 0px 0px 0px #ea830e;
+                box-shadow: 0px 0px 0px 0px #ea830e;
+            }
+        }
+
+        @-moz-keyframes testim-scale {
+            0% {
+                -moz-box-shadow: 0px 0px 0px 0px #eee;
+                box-shadow: 0px 0px 0px 0px #eee;
+            }
+
+            35% {
+                -moz-box-shadow: 0px 0px 10px 5px #eee;
+                box-shadow: 0px 0px 10px 5px #eee;
+            }
+
+            70% {
+                -moz-box-shadow: 0px 0px 10px 5px #ea830e;
+                box-shadow: 0px 0px 10px 5px #ea830e;
+            }
+
+            100% {
+                -moz-box-shadow: 0px 0px 0px 0px #ea830e;
+                box-shadow: 0px 0px 0px 0px #ea830e;
+            }
+        }
+
+        @-ms-keyframes testim-scale {
+            0% {
+                -ms-box-shadow: 0px 0px 0px 0px #eee;
+                box-shadow: 0px 0px 0px 0px #eee;
+            }
+
+            35% {
+                -ms-box-shadow: 0px 0px 10px 5px #eee;
+                box-shadow: 0px 0px 10px 5px #eee;
+            }
+
+            70% {
+                -ms-box-shadow: 0px 0px 10px 5px #ea830e;
+                box-shadow: 0px 0px 10px 5px #ea830e;
+            }
+
+            100% {
+                -ms-box-shadow: 0px 0px 0px 0px #ea830e;
+                box-shadow: 0px 0px 0px 0px #ea830e;
+            }
+        }
+
+        @-o-keyframes testim-scale {
+            0% {
+                -o-box-shadow: 0px 0px 0px 0px #eee;
+                box-shadow: 0px 0px 0px 0px #eee;
+            }
+
+            35% {
+                -o-box-shadow: 0px 0px 10px 5px #eee;
+                box-shadow: 0px 0px 10px 5px #eee;
+            }
+
+            70% {
+                -o-box-shadow: 0px 0px 10px 5px #ea830e;
+                box-shadow: 0px 0px 10px 5px #ea830e;
+            }
+
+            100% {
+                -o-box-shadow: 0px 0px 0px 0px #ea830e;
+                box-shadow: 0px 0px 0px 0px #ea830e;
+            }
+        }
+
+        @keyframes testim-scale {
+            0% {
+                box-shadow: 0px 0px 0px 0px #eee;
+            }
+
+            35% {
+                box-shadow: 0px 0px 10px 5px #eee;
+            }
+
+            70% {
+                box-shadow: 0px 0px 10px 5px #ea830e;
+            }
+
+            100% {
+                box-shadow: 0px 0px 0px 0px #ea830e;
+            }
+        }
+
+        @-webkit-keyframes testim-content-in {
+            from {
+                opacity: 0;
+                -webkit-transform: translateY(100%);
+                transform: translateY(100%);
+            }
+
+            to {
+                opacity: 1;
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+        }
+
+        @-moz-keyframes testim-content-in {
+            from {
+                opacity: 0;
+                -moz-transform: translateY(100%);
+                transform: translateY(100%);
+            }
+
+            to {
+                opacity: 1;
+                -moz-transform: translateY(0);
+                transform: translateY(0);
+            }
+        }
+
+        @-ms-keyframes testim-content-in {
+            from {
+                opacity: 0;
+                -ms-transform: translateY(100%);
+                transform: translateY(100%);
+            }
+
+            to {
+                opacity: 1;
+                -ms-transform: translateY(0);
+                transform: translateY(0);
+            }
+        }
+
+        @-o-keyframes testim-content-in {
+            from {
+                opacity: 0;
+                -o-transform: translateY(100%);
+                transform: translateY(100%);
+            }
+
+            to {
+                opacity: 1;
+                -o-transform: translateY(0);
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes testim-content-in {
+            from {
+                opacity: 0;
+                transform: translateY(100%);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @-webkit-keyframes testim-content-out {
+            from {
+                opacity: 1;
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+
+            to {
+                opacity: 0;
+                -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+            }
+        }
+
+        @-moz-keyframes testim-content-out {
+            from {
+                opacity: 1;
+                -moz-transform: translateY(0);
+                transform: translateY(0);
+            }
+
+            to {
+                opacity: 0;
+                -moz-transform: translateY(-100%);
+                transform: translateY(-100%);
+            }
+        }
+
+        @-ms-keyframes testim-content-out {
+            from {
+                opacity: 1;
+                -ms-transform: translateY(0);
+                transform: translateY(0);
+            }
+
+            to {
+                opacity: 0;
+                -ms-transform: translateY(-100%);
+                transform: translateY(-100%);
+            }
+        }
+
+        @-o-keyframes testim-content-out {
+            from {
+                opacity: 1;
+                -o-transform: translateY(0);
+                transform: translateY(0);
+            }
+
+            to {
+                opacity: 0;
+                transform: translateY(-100%);
+                transform: translateY(-100%);
+            }
+        }
+
+        @keyframes testim-content-out {
+            from {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            to {
+                opacity: 0;
+                transform: translateY(-100%);
+            }
+        }
+
+        @-webkit-keyframes testim-show {
+            from {
+                opacity: 0;
+                -webkit-transform: scale(0);
+                transform: scale(0);
+            }
+
+            to {
+                opacity: 1;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+
+        @-moz-keyframes testim-show {
+            from {
+                opacity: 0;
+                -moz-transform: scale(0);
+                transform: scale(0);
+            }
+
+            to {
+                opacity: 1;
+                -moz-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+
+        @-ms-keyframes testim-show {
+            from {
+                opacity: 0;
+                -ms-transform: scale(0);
+                transform: scale(0);
+            }
+
+            to {
+                opacity: 1;
+                -ms-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+
+        @-o-keyframes testim-show {
+            from {
+                opacity: 0;
+                -o-transform: scale(0);
+                transform: scale(0);
+            }
+
+            to {
+                opacity: 1;
+                -o-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+
+        @keyframes testim-show {
+            from {
+                opacity: 0;
+                transform: scale(0);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @-webkit-keyframes testim-hide {
+            from {
+                opacity: 1;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+
+            to {
+                opacity: 0;
+                -webkit-transform: scale(0);
+                transform: scale(0);
+            }
+        }
+
+        @-moz-keyframes testim-hide {
+            from {
+                opacity: 1;
+                -moz-transform: scale(1);
+                transform: scale(1);
+            }
+
+            to {
+                opacity: 0;
+                -moz-transform: scale(0);
+                transform: scale(0);
+            }
+        }
+
+        @-ms-keyframes testim-hide {
+            from {
+                opacity: 1;
+                -ms-transform: scale(1);
+                transform: scale(1);
+            }
+
+            to {
+                opacity: 0;
+                -ms-transform: scale(0);
+                transform: scale(0);
+            }
+        }
+
+        @-o-keyframes testim-hide {
+            from {
+                opacity: 1;
+                -o-transform: scale(1);
+                transform: scale(1);
+            }
+
+            to {
+                opacity: 0;
+                -o-transform: scale(0);
+                transform: scale(0);
+            }
+        }
+
+        @keyframes testim-hide {
+            from {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            to {
+                opacity: 0;
+                transform: scale(0);
+            }
+        }
+
+        @media all and (max-width: 300px) {
+            body {
+                font-size: 14px;
+            }
+        }
+
+        @media all and (max-width: 500px) {
+            .testim .arrow {
+                font-size: 1.5em;
+            }
+
+            .testim .cont div p {
+                line-height: 25px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Preloader Start -->
+    <div class="se-pre-con"></div>
+    <!-- Preloader Ends -->
+
+    <!-- Start Header Top 
+    ============================================= -->
+
+    <!-- End Header Top -->
+
+    <!-- Header 
+    ============================================= -->
+    <header id="home">
+
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-default bg-theme dark attr-border bootsnav">
+
+            <!-- Start Top Search -->
+            <div class="container">
+                <div class="row">
+                    <div class="top-search">
+                        <div class="input-group">
+                            <form action="#">
+                                <input type="text" name="text" class="form-control" placeholder="Search">
+                                <button type="submit">
+                                    <i class="ti-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Top Search -->
+
+            <div class="container">
+
+                <!-- Start Atribute Navigation -->
+                <div class="attr-nav">
+                    <ul>
+                        <li><a href="mailto:childcentralclinic@gmail.com"><i style="color: #032681;"
+                                    class=" fa-regular fa-envelope"></i></a></li>
+                        <li><a
+                                href="https://www.google.com/maps/place/Child+Central+Clinic/@12.930333,77.62454,1698m/data=!3m1!1e3!4m6!3m5!1s0x3bae145b94c8b01d:0x5feb814282d2a017!8m2!3d12.9303332!4d77.6245403!16s%2Fg%2F1pp2tx95t?hl=en&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"><i
+                                    style="color: #032681;" class=" fas fa-map-marker-alt"></i></a></li>
+                    </ul>
+                </div>
+                <!-- End Atribute Navigation -->
+
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index-3.html">
+                        <img src="assets/img/cclogo.jpeg"  class="logo logo-regular" alt="Logo">
+                        <img src="assets/img/cclogo.jpeg" width="252px" class="logo desktop" alt="Logo">
+                    </a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li>
+                            <a href="index-3.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about-us.html">About</a>
+                        </li>
+                        <li>
+                            <a href="departments-2.html">Departments</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Book An Appoinment</a>
+                        </li>
+
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+
+        </nav>
+        <!-- End Navigation -->
+
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Banner 
+    ============================================= -->
+    <!-- <div class="banner-area auto-height bg-gray fixed-thumb text-default">
+        <!-- Fixed Shape -->
+        <!-- <div class="fixed-shape-left-top">
+            <img src="assets/img/shape/1.png" alt="Shape">
+        </div>
+        <div class="container">
+            <div class="double-items">
+                <div class="row align-center">
+                    <div class="col-lg-6 info">
+                        <h2 class="wow fadeInDown" data-wow-duration="1s">Best Pediatric Clinic <strong>in
+                                Koramangala</strong></h2>
+                        <p class="wow fadeInLeft" data-wow-duration="1.5s">
+                            Child Central Clinic: Dedicated to nurturing health, growth, and happiness with expert
+                            pediatric care and a family-centered approach.
+                        </p>
+
+                    </div>
+                    <div class="col-lg-6 thumb">
+                        <img src="assets/img/thumb/1.png" alt="Thumb">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- End Banner -->
+
+
+    <!-- slider -->
+    <div class="banner-area content-less">
+        <div id="bootcarousel" class="carousel text-large slide carousel-fade animate_text" data-ride="carousel">
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner carousel-zoom">
+                <div class="carousel-item">
+                    <div class="slider-thumb bg-cover" style="background-image: url(assets/img/thumb/homebanner-01.jpg);background-size: cover;background-repeat: no-repeat;background-position: 
+                    center center;"></div>
+                    <div class="box-table">
+                        <div class="box-cell">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-9">
+                                        <div class="content">
+
+                                          
+                                            <h2 data-animation="animated slideInRight" class="">We care for all your <br>  child’s needs
+                                                 <strong>
+                                                    You can trust us</strong></h2>
+                                                    <p data-animation="animated slideInDown" class="">Child Central Clinic: Dedicated to nurturing health, growth, and happiness with expert pediatric care and a family-centered approach.
+                                                    </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <div class="slider-thumb bg-cover" style="background-image: url(assets/img/thumb/home-03.jpg);background-position: 
+                    center center;"></div>
+                    <div class="box-table">
+                        <div class="box-cell">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-9">
+                                        <div class="content">
+
+
+                                            <h2 class="herotxt" data-animation="animated slideInRight" class="">Best Pediatric Clinic
+                                                <strong>in Koramangala</strong></h2>
+                                            <p data-animation="animated slideInDown" class="">Child Central Clinic:
+                                                Dedicated to nurturing health, growth, and happiness with expert
+                                                pediatric care and a family-centered approach.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Wrapper for slides -->
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control theme" href="#bootcarousel" data-slide="prev">
+                <i class="fa fa-angle-left"></i>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control theme" href="#bootcarousel" data-slide="next">
+                <i class="fa fa-angle-right"></i>
+                <span class="sr-only">Next</span>
+            </a>
+
+        </div>
+    </div>
+    <!-- slider -->
+
+
+
+    <!-- Start About
+    ============================================= -->
+
+    <!-- End About -->
+
+    <!-- about -->
+    <div class="departments-area bg-gray default-padding" style="background-color: #F8D47C;">
+
+        <div class="container">
+            <div class="departments-tabs">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="center-tabs">
+
+                            <div id="tabsContent" class="tab-content wow fadeInUp" data-wow-delay="0.5s"
+                                style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                                <div id="tab1" class="tab-pane fade active show">
+                                    <div class="row align-center">
+                                        <div class="col-lg-5 col-md-12 thumb">
+                                            <img src="assets/img/800x800.png" alt="Thumb">
+                                        </div>
+                                        <div class="col-lg-7 col-md-12 info">
+                                            <h2>Welcome to<strong> Child Central Clinic </strong></h2>
+                                            <h5 style="text-transform: uppercase;
+                                            color: #1ebeb6;
+                                            font-weight: 600;
+                                            font-size: 18px;
+                                            margin-bottom: 25px;">Your Child’s One-Stop Health Hub</h5>
+                                            <p>
+                                                We are committed to providing top-notch pediatric care under one roof.
+                                                Our expert team of pediatricians and specialists is dedicated to
+                                                nurturing the health and well-being of children from infancy to
+                                                adolescence. From general pediatric care to specialized treatments, we
+                                                are always there for your child's needs, ensuring their healthy
+                                                development.
+                                            </p>
+                                            <ul>
+                                                <li>More Experience</li>
+                                                <li>All healthcare facilities for your child under one roof</li>
+                                                <li>Seamless care</li>
+                                                <li>Unparalleled expertise</li>
+                                            </ul>
+                                            <a class="btn btn-md btn-gradient" href="#"><i
+                                                    class="fas fa-angle-right"></i> Make Appoinment</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+
+
+
+    <!-- Start Choose Us 
+    ============================================= -->
+    <div class="choose-us-area" style="background-color: #0087A5;">
+        <div class="row">
+            <div class="col-lg-6 thumb bg-cover" style="background-image: url(assets/img/2440x1578.png);"></div>
+            <div class="col-lg-6 info">
+                <div class="info-box">
+                    <h5>Our story</h5>
+                    <h2>Our Doctors <br> Specialize in you.</h2>
+                    <p>
+                        We are committed to providing top-notch pediatric care under one roof. Our expert team of
+                        pediatricians and specialists are dedicated to nurturing the health and well-being of children
+                        from infancy to adolescence. From general pediatric care to specialized treatments, we are
+                        always there for your child's needs, ensuring their healthy development.
+                    </p>
+                    <p>
+                        Our team comprises of professionals who specialise in child and adolescent healthcare.
+                        Collectively, we have over 125 years of experience in identifying, treating children and
+                        restoring their health and wellbeing. Now you can avail the best children’s doctor in the city.
+
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-entry-area relative default-padding text-center">
+        <div class="container">
+            <div class="item-box">
+                <div class="row align-center">
+                    <!-- Single Item -->
+                    <div class="col-lg-4 single-item">
+                        <div class="item">
+                            <i class="flaticon-doctor-2"></i>
+                            <h4>Please note</h4>
+                            <p>
+                                Overwhelming and conflicting information about child
+                                care on the internet can lead to confusion, which is why our child
+                                doctors and specialists are here to help you out. Get a proper
+                                treatment plan tailored to the health needs of your child.
+                            </p>
+                            <!-- <ul>
+                                <li>
+                                    <span>Phone</span>
+                                    <p>(+987)98765432</p>
+                                </li>
+                            </ul> -->
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="col-lg-4 single-item">
+                        <div class="thumb">
+                            <img src="assets/img/thumb/1.png" alt="Thumb">
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="col-lg-4 single-item">
+                        <div class="item">
+                            <i class="flaticon-call"></i>
+                            <h4>Support and facilities</h4>
+                            <p>
+
+                                We understand your child’s heath is always a top concern and
+                                visiting
+                                a clinic can certainly make you worried. But our caring and friendly
+                                staff at Child Central Clinic take over and make you feel relaxed .
+                                Our
+                                team comprises of experienced paediatric nurses and technicians, who
+                                take care of all tasks with utter care; so that you kid feels ease.
+
+                            </p>
+                            <!-- <ul>
+                                <li>
+                                    <span>Phone</span>
+                                    <p>(+987)98765432</p>
+                                </li>
+                            </ul> -->
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Choose Us -->
+
+    <!-- explore serices -->
+    <div class="features-area half-bg bg-gray default-padding bottom-less">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h2>Explore Our Services </h2>
+                        <p>
+                            Explore our department for comprehensive services, expert care, and innovative solutions
+                            tailored to you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="features-box text-center">
+                <div class="row">
+                    <!-- Single Item -->
+                    <div class="col-lg-3 col-md-6 single-item">
+                        <div class="item">
+                            <a style="background-color: #7BC098 !important;">
+                                <div class="icon">
+                                    <img src="assets/img/icon/icons-03.png" alt="Icon">
+                                </div>
+                                <h4 class="text-white" style="padding-bottom: 28px;">General Pediatrics</h4>
+
+
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="col-lg-3 col-md-6 single-item">
+                        <div class="item">
+                            <a style="background-color: #0087A5;">
+                                <div class="icon">
+                                    <img src="assets/img/icon/icons-26.png" alt="Icon">
+                                </div>
+                                <h4 class="text-white">Pediatric health checkup</h4>
+
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="col-lg-3 col-md-6 single-item">
+                        <div class="item">
+                            <a style="background-color: #F05359;">
+                                <div class="icon">
+                                    <img src="assets/img/icon/img-29.png" alt="Icon">
+                                </div>
+                                <h4 class="text-white" style="padding-bottom: 28px;">Pediatric Dentistry</h4>
+
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="col-lg-3 col-md-6 single-item">
+                        <div class="item">
+                            <a href="#" style="background-color: #F8D47C;">
+                                <div class="icon">
+                                    <img src="assets/img/icon/ChildPsychologist.png" alt="Icon">
+                                </div>
+                                <h4 class="text-white" style="padding-bottom: 28px;">Child Psychologist</h4>
+
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                </div>
+            </div>
+        </div>
+        <center><a class="btn btn-md btn-gradient" href="departments-2.html"><i class="fas fa-angle-right"></i> Show
+                More Services</a></center>
+    </div>
+    <!-- explore serices -->
+
+
+    <!-- why choose us -->
+    <div class="department-area icon-only bg-gray carousel-shadow default-padding bottom-less"
+        style="background-color: #1EBEB6;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h2 class="text-white">Why Choose Us ?</h2>
+                        <p class="text-white">
+                            Trust our expert team for personalized care, advanced technology, and unwavering dedication
+                            to your child’s health
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="item-box text-center">
+                <div class="row">
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-3 col-md-6">
+                        <div class="item">
+                            <div class="info">
+                                <h4>
+                                    <a style="font-size: 18px;" href="#">Experienced <br> Team</a>
+                                </h4>
+                                <div class="icon">
+                                    <i class="flaticon-doctor"></i>
+                                </div>
+                                <p style="margin-top: -9px">
+                                    With highly qualified pediatric consultants and specialists, we provide exceptional
+                                    care and accurate diagnosis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-3 col-md-6">
+                        <div class="item">
+                            <div class="info">
+                                <h4>
+                                    <a style="font-size: 18px;" href="#">Comprehensive <br> Pediatric Services</a>
+                                </h4>
+                                <div class="icon">
+                                    <i class="flaticon-stethoscope"></i>
+                                </div>
+                                <p style="margin-top: -9px">
+                                    From general pediatrics to pediatric surgery and nutrition, we offer a holistic
+                                    approach to your child's health.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-3 col-md-6">
+                        <div class="item">
+                            <div class="info">
+                                <h4>
+                                    <a style="font-size: 18px;" href="#">Personalized <br> Care
+                                    </a>
+                                </h4>
+                                <div class="icon">
+                                    <i class="flaticon-drugs"></i>
+                                </div>
+                                <p style="margin-top: -9px">
+                                    We believe in understanding each child’s unique needs, offering customized treatment
+                                    plans and care.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-3 col-md-6">
+                        <div class="item">
+                            <div class="info">
+                                <h4>
+                                    <a style="font-size: 18px;" href="#">State-of-the-Art <br> Facilities
+                                    </a>
+                                </h4>
+                                <div class="icon">
+                                    <i class="flaticon-blood"></i>
+                                </div>
+                                <p style="margin-top: -9px">
+                                    Equipped with advanced diagnostic tools and labs to ensure the best outcomes for
+                                    your child’s health.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- why choose us -->
+
+    <!-- testimonails -->
+
+    <section
+        style="background-image: url('assets/img/thumb/bgtestimony.jpg');background-size: cover;background-repeat: no-repeat;">
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h1 class="mt-5 mb-5 text-white" style="font-size: 30px;">Testimonials</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="testim" class="testim">
+
+            <!--         <div class="testim-cover"> -->
+            <div class="wrap">
+
+                <span id="right-arrow" class="arrow right fa fa-chevron-right" aria-label="Next Slide"></span>
+                <span id="left-arrow" class="arrow left fa fa-chevron-left" aria-label="Previous Slide"></span>
+
+
+                <ul id="testim-dots" class="dots">
+                    <li class="dot active"></li><!--
+                        -->
+                    <li class="dot"></li><!--
+                        -->
+                    <li class="dot"></li><!--
+                        -->
+
+                </ul>
+                <div id="testim-content" class="cont">
+
+                    <div class="active">
+                        <div class="img"><img src="assets/img/thumb/testimonal_mal.jpeg" alt=""></div>
+                        <h2>Mohammed Mfa</h2>
+                        <p>One of the finest Doctor Jagdish Chinnappa Sir, Child Specialist, Manipal Hospital Senior
+                            Doctor
+                            (Bengaluru H.A.L Road) and Very Respected Person, We are visiting to his clinic from
+                            Langford
+                            Town Clinic since 1993 till date to koramangala Clinic.</p>
+                    </div>
+
+
+
+
+
+                    <div>
+                        <div class="img"><img src="assets/img/thumb/testimonal_mal.jpeg" alt=""></div>
+                        <h2>Amit Kumar</h2>
+                        <p>One of the best pediatric in Bangalore. Have been consulting for my son from last3
+                            years.Never
+                            prescribe unnecessary medicine. Come across as an expert. Highly recommend!.</p>
+                    </div>
+
+                    <div>
+                        <div class="img"><img src="assets/img/thumb/testimonal_mal.jpeg" alt=""></div>
+                        <h2>sajan sms</h2>
+                        <p>He is a man of simplicity as per our experience. We believe in his years of experience and
+                            always feel relieved when we visit him at his clinic.</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--         </div> -->
+        </section>
+    </section>
+    <!-- testimonails -->
+
+
+
+    <!-- Start Footer 
+    ============================================= -->
+    <footer class="bg-dark text-light">
+        <div class="container">
+            <div class="f-items default-padding">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 item">
+                        <div class="f-item about">
+                            <img src="assets/img/cclogo.jpeg" alt="Logo" width="252px">
+                            <p>
+                                Caring for the community with commitment, compassion, and innovation, we aim to empower
+                                healthier lives through quality medical services and support at every stage.
+                            </p>
+                            <div class="address">
+                                <ul>
+                                    <h1 style="font-weight: 700 !important;font-size: 22px !important;">Connect With Us
+                                    </h1>
+                                    <li>
+
+                                        <div class="icon">
+                                            <a href="https://www.facebook.com/profile.php?id=61567311547769"><i
+                                                    class="fab fa-facebook-f" aria-hidden="true"></i> </a>
+                                            <a href="https://www.instagram.com/child_central_clinic_/"><i
+                                                    class="fab fa-instagram" aria-hidden="true"></i></a>
+                                            <a href="https://x.com/child_central"><i class="fab fa-twitter"
+                                                    aria-hidden="true"></i></a>
+                                            <a href="https://www.linkedin.com/company/child-central-clinic/"><i
+                                                    class="fab fa-linkedin" aria-hidden="true"></i></a>
+                                            <a href="https://in.pinterest.com/childcentralclinic/"><i
+                                                    class="fab fa-pinterest" aria-hidden="true"></i></a>
+                                            <a href="https://www.youtube.com/channel/UC1C4pbk_nF5hoVAFXEmY0AQ"><i
+                                                    class="fab fa-youtube" aria-hidden="true"></i></a>
+                                        </div>
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="single-item col-lg-2 col-md-6 item">
+                        <div class="f-item link">
+                            <h4 class="widget-title">Department</h4>
+                            <ul>
+                                <li>
+                                    <a href="departments.html">General Pediatrics</a>
+                                </li>
+                                <li>
+                                    <a href="departments.html">Pediatric Dentistry</a>
+                                </li>
+                                <li>
+                                    <a href="departments.html">Pediatric Ophthalmology</a>
+                                </li>
+                                <li>
+                                    <a href="departments.html">Pediatric Nutrition</a>
+                                </li>
+                                <li>
+                                    <a href="departments.html">Pediatric Surgery</a>
+                                </li>
+                                <li>
+                                    <a href="departments.html">Eye testing</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="single-item col-lg-2 col-md-6 item">
+                        <div class="f-item link">
+                            <h4 class="widget-title">Quick Links</h4>
+                            <ul>
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="about-us.html">About</a>
+                                </li>
+                                <!-- <li>
+                                    <a href="doctors.html">Doctors</a>
+                                </li> -->
+                                <li>
+                                    <a href="departments.html">Departments</a>
+                                </li>
+                                <!-- <li>
+                                    <a href="#">Blogs</a>
+                                </li> -->
+                                <li>
+                                    <a href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="single-item col-lg-4 col-md-6 item">
+                        <div class="f-item branches">
+                            <div class="branches">
+                                <ul>
+                                    <li>
+                                        <strong>Reach Us:</strong>
+                                        <!-- <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.6478805262304!2d77.62196537358825!3d12.930338415784632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae145b94c8b01d%3A0x5feb814282d2a017!2sChild%20Central%20Clinic!5e0!3m2!1sen!2sin!4v1729676427875!5m2!1sen!2sin"
+                                            width="100%" height="100%" style="border:0;" allowfullscreen=""
+                                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                                    </li>
+                                    <li>
+                                        <strong>Address:</strong>
+                                        <span>BDA complex, 717/1, 16th Main, 6th B Cross Rd, behind Koramangala, next to
+                                            car house. Thank you, 3rd Block, Koramangala, Bengaluru, Karnataka
+                                            560034</span>
+                                    </li>
+                                </ul>
+
+                                <ul>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="flaticon-email m-2" style="font-size: 20px;color: white;"></i>
+                                            <span><a
+                                                    href="mailto:mailto:childcentralclinic@gmail.com">childcentralclinic@gmail.com</a></span>
+                                        </div>
+                                        <div class="info">
+
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="flaticon-call m-2"
+                                                style="font-size: 20px;color: white;"></i><span><a
+                                                    href="tel:+918050035925">+918050035925</a></span>
+                                        </div>
+                                        <div class="info">
+
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Start Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-center">
+                    <div class="col-lg-4">
+                        <center>
+                            <p>Copyright © 2024. Designed by <a href="#">Child Clinic Central</a></p>
+                        </center>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Bottom -->
+    </footer>
+
+    <!-- End Footer -->
+
+    <!-- jQuery Frameworks
+    ============================================= -->
+
+
+    <script>
+        window.onload = function () {
+            // Elements
+            const testim = document.getElementById("testim"),
+                testimDots = Array.from(document.querySelectorAll("#testim-dots .dot")),
+                testimContent = Array.from(document.querySelectorAll("#testim-content > div")),
+                testimLeftArrow = document.getElementById("left-arrow"),
+                testimRightArrow = document.getElementById("right-arrow");
+
+            // Variables
+            let testimSpeed = 3000, // Auto-slide speed in milliseconds
+                currentSlide = 0,
+                testimTimer,
+                isManualNavigation = false; // Flag for manual navigation
+
+            // Function to play a slide
+            function playSlide(slide) {
+                // Ensure slide index stays within range (loop around)
+                if (slide < 0) slide = currentSlide = testimContent.length - 1;
+                if (slide >= testimContent.length) slide = currentSlide = 0;
+
+                // Update active/inactive classes for content and dots
+                testimContent.forEach((content, index) => {
+                    content.classList.remove("active", "inactive");
+                    if (index === slide) content.classList.add("active");
+                    else content.classList.add("inactive");
+                });
+
+                testimDots.forEach((dot, index) => {
+                    dot.classList.toggle("active", index === slide);
+                });
+
+                currentSlide = slide;
+
+                // Restart auto-slide timer unless it's a manual navigation
+                if (!isManualNavigation) {
+                    clearTimeout(testimTimer);
+                    testimTimer = setTimeout(() => playSlide(currentSlide + 1), testimSpeed);
+                }
+            }
+
+            // Manual navigation handlers
+            function resetTimerAndPlay(slide) {
+                isManualNavigation = true;
+                playSlide(slide);
+                setTimeout(() => {
+                    isManualNavigation = false;
+                }, testimSpeed); // Resume auto-slide after a delay
+            }
+
+            testimLeftArrow.addEventListener("click", () => {
+                resetTimerAndPlay(currentSlide - 1);
+            });
+
+            testimRightArrow.addEventListener("click", () => {
+                resetTimerAndPlay(currentSlide + 1);
+            });
+
+            testimDots.forEach((dot, index) => {
+                dot.addEventListener("click", () => {
+                    resetTimerAndPlay(index);
+                });
+            });
+
+            // Touch navigation for mobile
+            let touchStartX = 0, touchEndX = 0;
+
+            testim.addEventListener("touchstart", (e) => {
+                touchStartX = e.changedTouches[0].clientX;
+            });
+
+            testim.addEventListener("touchend", (e) => {
+                touchEndX = e.changedTouches[0].clientX;
+                const touchDiff = touchStartX - touchEndX;
+
+                if (touchDiff > 50) resetTimerAndPlay(currentSlide + 1); // Swipe left
+                if (touchDiff < -50) resetTimerAndPlay(currentSlide - 1); // Swipe right
+            });
+
+            // Initialize auto-slide
+            playSlide(currentSlide);
+        };
+    </script>
+
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/modernizr.custom.13711.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/count-to.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/bootsnav.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
